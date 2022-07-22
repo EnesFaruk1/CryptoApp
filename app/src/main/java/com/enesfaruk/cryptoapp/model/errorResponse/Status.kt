@@ -1,9 +1,17 @@
 package com.enesfaruk.cryptoapp.model.errorResponse
 
+
+import com.google.gson.annotations.SerializedName
+
 data class Status(
-    val credit_count: Int,
-    val elapsed: Int,
-    val error_code: Int,
-    val error_message: String,
-    val timestamp: String
+    @SerializedName("credit_count")
+    val creditCount: Int?,
+    @SerializedName("elapsed")
+    val elapsed: Int?,
+    @SerializedName("error_code")
+    val errorCode: Int?,
+    @SerializedName("error_message")
+    val errorMessage: String?,
+    @SerializedName("timestamp")
+    val timestamp: String?
 )

@@ -1,5 +1,9 @@
 package com.enesfaruk.cryptoapp.model.errorResponse
 
+
+import com.google.gson.annotations.SerializedName
+
 data class ErrorResponse(
-    val status: Status
+    @SerializedName("status")
+    val status: Status?
 )

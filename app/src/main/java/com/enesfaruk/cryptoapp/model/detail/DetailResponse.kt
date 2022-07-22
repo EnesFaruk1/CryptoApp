@@ -1,11 +1,11 @@
-package com.enesfaruk.cryptoapp.model.home
+package com.enesfaruk.cryptoapp.model.detail
 
 
 import com.google.gson.annotations.SerializedName
 
-data class CryptoResponse(
+data class DetailResponse(
     @SerializedName("data")
-    val `data`: List<Data>?,
+    val `data`: Any?,
     @SerializedName("status")
     val status: Status?
 )

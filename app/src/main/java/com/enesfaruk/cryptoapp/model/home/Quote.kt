@@ -1,5 +1,9 @@
 package com.enesfaruk.cryptoapp.model.home
 
+
+import com.google.gson.annotations.SerializedName
+
 data class Quote(
-    val USD: USD
+    @SerializedName("USD")
+    val uSD: USD?
 )

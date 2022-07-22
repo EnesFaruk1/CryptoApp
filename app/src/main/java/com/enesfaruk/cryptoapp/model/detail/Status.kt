@@ -1,4 +1,4 @@
-package com.enesfaruk.cryptoapp.model.home
+package com.enesfaruk.cryptoapp.model.detail
 
 
 import com.google.gson.annotations.SerializedName
@@ -15,7 +15,5 @@ data class Status(
     @SerializedName("notice")
     val notice: Any?,
     @SerializedName("timestamp")
-    val timestamp: String?,
-    @SerializedName("total_count")
-    val totalCount: Int?
+    val timestamp: String?
 )

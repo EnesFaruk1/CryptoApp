@@ -34,7 +34,7 @@ private fun errorBodyParser(error: String?): String{
     error?.let {
         return try {
             val errorResponse = Gson().fromJson(it, ErrorResponse::class.java)
-            val errorMessage = errorResponse.status.error_message
+            val errorMessage = errorResponse.status?.errorMessage
             errorMessage ?: "Unexpected error"
         }catch (e: Exception){
             "Unexpected error"
